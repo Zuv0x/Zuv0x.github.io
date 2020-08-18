@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git CS50</title>
+    <style>
+        span{
+            color: blue;
+        }
+        .otros{
+            color: gray;
+            
+        }
+        .otrost{
+            color: red;
+            
+        }
+        h1{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 >Wellcome to my WebPage!</h1>
+    <h2>Aprendiendo gitHub</h2>
+    <div>Comandos Git
+        <ol>
+            <li>git clone <br>
+            Permite clonar un proyecto de nuestro repositorio en la web <br>Pasos: 
+            <ul>
+                <li>Abrir terminal</li>
+                <li>Digitar: <span> git clone "https://github.com/Zuv0x/hello.git"</span>
+                </li>
+                <li>
+                    <ol>
+                        <li class="otrost">Crear un archivo</li>
+                        <span class="otros">touch hello.html</span>
+                        <li class="otrost">Listar archivos</li>
+                        <span class="otros">ls </span>
+                    </ol>
+                </li>
+            </ul>
+            </li>
+            <li> git add </li>
+                Permite agregar un archivo para que este en seguimiento
+                <br>Pasos: 
+                <ul>
+                    <li><span>git add hello.html</span></li>
+                    <li></li>
+                </ul>
+            
+            <li>git commit -m</li>
+            Permite capturar el documento y agregar un mensaje
+            <br>Pasos: 
+            <ul>
+                <li><span>git commit -m "Comandos git"</span></li>
+                <li><span>git commit -am "Guarda todos los archivos modificados y agrega un mensaje"</span></li>
+                
+            </ul>
+            <li>git status</li>
+            Muestra el estado de los archivos en mi directorio de trabajo
+            <br>Pasos: 
+            <ul>
+                <li><span>git status</span></li>
+                
+            </ul>
+            <li>git push</li>
+            Enviará nuestro directorio local y actualizara el repositorio de gitHub.
+            <br>Pasos: 
+            <ul>
+                <li><span>git push</span></li>
+                
+            </ul>
+            <li>git pull</li>
+            Tomará el repositorio en gitHub y lo reemplazara por el local
+            <br>Pasos: 
+            <ul>
+                <li><span>git pull</span></li>
+                <li>En caso de conflictos aparecerá "CONFLICT: merge conflict"</li>
+            </ul>
+            <li>git log</li>
+            Muestra el historico de commit
+            <br>Pasos: 
+            <ul>
+                <li><span>git log</span></li>
+               Para observar todos desplazamos con las teclas de dirección en la pantalla
+               <li><span>git log --oneline</span></li>
+               Muestra lista de una linea
+               <li><span>git log -X</span></li>
+               Muestra los X(número) commit últimos
+               <li><span>git log -2 -p</span></li>
+               Muestra el commit 2 y el detalle del codigo únicamente de ese commit
+               <li><span>git show "id"</span></li>
+               Muestra el commit y su detelle.
+                El id se obtiene del git log --oneline
+                <br>referencia: https://desarrolloweb.com/articulos/git-log.html
+            </ul>
+            <li>git reset</li>
+            Retorna a un punto anterior del repositorio
+            <br>Pasos: 
+            <ul>
+                <li><span>git reset --hard "commit"</span></li>
+                Para retornar a una confirmación específica
+                <li><span>git reset --hard "origin/master"</span></li>
+                Para retornar a la version del repositorio gitHub
+            </ul>
+            <li>git branch</li>
+            Permite trabajar con ramas
+            <br>Pasos: 
+            <ul>
+                <li><span>git branch</span></li>
+                Muestra las ramas de mi repositorio
+                <li><span>git  checkout -b name</span></li>
+                Crea una rama nueva de nombre "name" <br>
+                Activa la nueva rama para su uso
+                <li><span>git  checkout master</span></li>
+                Retorna a la rama principal o la que querramos llamar <br>
+                <li><span>git  merge "rama2"</span></li>
+                Fusiona las ramas elegidas <br>
+            </ul>
+            <li>Button Fork</li>
+            Bifurcar repositorio: Hacer una copia propia a nuestro repositorio
+            <br>Ejemplo:  https://github.com/twbs/bootstrap
+            <li>GitHub Pages</li>
+            Crear un nuevo repositorio y agregar extension".github.io"
+            <br>Ejemplo:  
+            </ol>
+    </div>
+</body>
+</html>
